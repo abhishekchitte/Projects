@@ -1,25 +1,8 @@
 import React, { useState } from "react";
 import { Card, CardContent } from "./ui/components/card";
 import { Button } from "./ui/components/button";
+import quizData from "./data/quizData";
 
-// 📘 Quiz data
-const quizData = [
-  {
-    question: "Which planet is known as the Red Planet?",
-    options: ["Earth", "Mars", "Venus", "Jupiter"],
-    answer: "Mars",
-  },
-  {
-    question: "What is the capital of France?",
-    options: ["Berlin", "Madrid", "Paris", "Rome"],
-    answer: "Paris",
-  },
-  {
-    question: "Which gas do plants absorb during photosynthesis?",
-    options: ["Oxygen", "Carbon Dioxide", "Nitrogen", "Helium"],
-    answer: "Carbon Dioxide",
-  },
-];
 
 export default function QuizApp() {
   const [currentQ, setCurrentQ] = useState(0);
@@ -28,9 +11,9 @@ export default function QuizApp() {
   const [finished, setFinished] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
 
-  const handleAnswer = (option) => {
-    setSelected(option);
-    if (option === quizData[currentQ].answer) {
+  const handleAnswer = (optionIndex) => {
+    setSelected(optionIndex);
+    if (optionIndex === quizData[currentQ].answerIndex) {
       setScore(score + 1);
     }
     setTimeout(() => {
@@ -52,7 +35,7 @@ export default function QuizApp() {
       } flex justify-center items-center min-h-screen p-4 transition-colors`}
     >
       <Card
-        className={`w-full max-w-md p-6 ${
+        className={`w-full max-w-6xl p-6 ${
           darkMode ? "bg-gray-800" : "bg-white"
         }`}
       >
@@ -68,8 +51,9 @@ export default function QuizApp() {
         <CardContent>
           {!finished ? (
             <div className="space-y-6">
+              {/* Long question handling */}
               <h2
-                className={`text-xl font-bold ${
+                className={`text-lg sm:text-xl font-bold leading-relaxed ${
                   darkMode ? "text-gray-100" : "text-gray-800"
                 }`}
               >
@@ -79,11 +63,11 @@ export default function QuizApp() {
                 {quizData[currentQ].options.map((option, idx) => (
                   <Button
                     key={idx}
-                    onClick={() => handleAnswer(option)}
-                    className={`w-full py-3 rounded-xl text-lg font-semibold tracking-wide transition-all duration-300
+                    onClick={() => handleAnswer(idx)}
+                    className={`w-full py-3 px-4 rounded-xl text-left text-lg font-semibold tracking-wide transition-all duration-300
                       ${
-                        selected === option
-                          ? option === quizData[currentQ].answer
+                        selected === idx
+                          ? idx === quizData[currentQ].answerIndex
                             ? "bg-green-600 text-white hover:bg-green-700"
                             : "bg-red-600 text-white hover:bg-red-700"
                           : darkMode
