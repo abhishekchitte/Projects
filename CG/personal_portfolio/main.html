@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abhishek | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gradient-to-r from-gray-50 to-gray-200 text-gray-900">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+      <div
+        class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <h1 class="text-2xl font-bold text-indigo-600">My Portfolio</h1>
+        <div class="space-x-6">
+          <a href="#skills" class="hover:text-indigo-600 transition-colors"
+            >Skills</a
+          >
+          <a href="#experience" class="hover:text-indigo-600 transition-colors"
+            >Experience</a
+          >
+          <a href="#projects" class="hover:text-indigo-600 transition-colors"
+            >Projects</a
+          >
+          <a href="#contact" class="hover:text-indigo-600 transition-colors"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="flex flex-col items-center justify-center text-center py-20 px-4"
+    >
+      <div class="relative w-32 h-32 mb-6">
+        <img
+          src="https://media.licdn.com/dms/image/v2/D5603AQHjsM0lOAQ8xQ/profile-displayphoto-scale_400_400/B56Zf7eVr0HQAk-/0/1752270724452?e=1758153600&v=beta&t=BuB4jA-r1A_Fmx1s95H6PY2J0Q3jp5NlzAbZR2mdVoU"
+          alt="profile"
+          class="rounded-full shadow-xl border-4 border-indigo-500"
+        />
+        <span class="absolute bottom-0 right-0 text-3xl">🇮🇳</span>
+      </div>
+      <h2
+        id="typewriter"
+        class="text-4xl sm:text-5xl font-extrabold text-gray-800"
+      ></h2>
+      <p class="mt-4 text-lg text-gray-600 max-w-4xl">
+        I’m a Data Engineer with 3 years of experience designing and building
+        scalable data pipelines, ETL workflows, and cloud-based data platforms.
+        Skilled in SQL, Python, Spark, and Airflow, I specialize in transforming
+        raw data into actionable insights. Experienced across AWS, Snowflake,
+        and modern data warehousing, with a strong focus on data modeling,
+        performance optimization, and automation.
+      </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="max-w-6xl mx-auto px-6 py-16">
+      <h2
+        class="text-3xl font-bold text-center mb-10 text-indigo-600 tracking-wide"
+      >
+        ✨ Skills
+      </h2>
+      <div class="grid md:grid-cols-4 gap-8">
+        <div
+          class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition transform hover:-translate-y-1"
+        >
+          <h3 class="text-xl font-semibold mb-4 text-indigo-500">
+            Programming
+          </h3>
+          <ul class="space-y-4 text-gray-700">
+            <li>
+              🐍 Python
+              <div class="w-full bg-gray-200 rounded-full h-2 mt-1">
+                <div class="bg-indigo-500 h-2 rounded-full w-[70%]"></div>
+              </div>
+            </li>
+            <li>
+              ⚡️ Pyspark
+              <div class="w-full bg-gray-200 rounded-full h-2 mt-1">
+                <div class="bg-indigo-500 h-2 rounded-full w-[80%]"></div>
+              </div>
+            </li>
+            <li>
+              ☕ Java
+              <div class="w-full bg-gray-200 rounded-full h-2 mt-1">
+                <div class="bg-indigo-500 h-2 rounded-full w-[50%]"></div>
+              </div>
+            </li>
+            <li>
+              📊 SQL
+              <div class="w-full bg-gray-200 rounded-full h-2 mt-1">
+                <div class="bg-indigo-500 h-2 rounded-full w-[85%]"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition transform hover:-translate-y-1"
+        >
+          <h3 class="text-xl font-semibold mb-4 text-indigo-500">Cloud</h3>
+          <ul class="space-y-4 text-gray-700">
+            <li>
+              🐍 AWS
+              <div class="w-full bg-gray-200 rounded-full h-2 mt-1">
+                <div class="bg-indigo-500 h-2 rounded-full w-[40%]"></div>
+              </div>
+            </li>
+            <li>
+              ⚡️ Azure
+              <div class="w-full bg-gray-200 rounded-full h-2 mt-1">
+                <div class="bg-indigo-500 h-2 rounded-full w-[80%]"></div>
+              </div>
+            </li>
+            <li>
+              ☕ GCP
+              <div class="w-full bg-gray-200 rounded-full h-2 mt-1">
+                <div class="bg-indigo-500 h-2 rounded-full w-[20%]"></div>
+              </div>
+            </li>
+            <!-- <li>
+            📊 SQL
+            <div class="w-full bg-gray-200 rounded-full h-2 mt-1">
+              <div class="bg-indigo-500 h-2 rounded-full w-[85%]"></div>
+            </div>
+          </li> -->
+          </ul>
+        </div>
+        <div
+          class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition transform hover:-translate-y-1"
+        >
+          <h3 class="text-xl font-semibold mb-4 text-indigo-500">
+            Data Engineering
+          </h3>
+          <ul class="space-y-4 text-gray-700">
+            <li>
+              🛠️ Apache Spark
+              <div class="w-full bg-gray-200 rounded-full h-2 mt-1">
+                <div class="bg-indigo-500 h-2 rounded-full w-[85%]"></div>
+              </div>
+            </li>
+            <li>
+              ☁️ ADF, Synapse
+              <div class="w-full bg-gray-200 rounded-full h-2 mt-1">
+                <div class="bg-indigo-500 h-2 rounded-full w-[75%]"></div>
+              </div>
+            </li>
+            <li>
+              📂 Databricks
+              <div class="w-full bg-gray-200 rounded-full h-2 mt-1">
+                <div class="bg-indigo-500 h-2 rounded-full w-[90%]"></div>
+              </div>
+            </li>
+            <li>
+              🔄 ETL Pipelines
+              <div class="w-full bg-gray-200 rounded-full h-2 mt-1">
+                <div class="bg-indigo-500 h-2 rounded-full w-[90%]"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition transform hover:-translate-y-1"
+        >
+          <h3 class="text-xl font-semibold mb-4 text-indigo-500">
+            Tools & Others
+          </h3>
+          <ul class="space-y-4 text-gray-700">
+            <li>
+              🐳 Docker
+              <div class="w-full bg-gray-200 rounded-full h-2 mt-1">
+                <div class="bg-indigo-500 h-2 rounded-full w-[60%]"></div>
+              </div>
+            </li>
+            <li>
+              🔧 Git & GitHub
+              <div class="w-full bg-gray-200 rounded-full h-2 mt-1">
+                <div class="bg-indigo-500 h-2 rounded-full w-[85%]"></div>
+              </div>
+            </li>
+            <li>
+              📈 Power BI
+              <div class="w-full bg-gray-200 rounded-full h-2 mt-1">
+                <div class="bg-indigo-500 h-2 rounded-full w-[75%]"></div>
+              </div>
+            </li>
+            <li>
+              🔍 Linux
+              <div class="w-full bg-gray-200 rounded-full h-2 mt-1">
+                <div class="bg-indigo-500 h-2 rounded-full w-[70%]"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Experience -->
+    <section id="experience" class="max-w-6xl mx-auto py-16 px-6">
+      <h2
+        class="text-3xl font-bold text-center mb-10 text-indigo-600 tracking-wide"
+      >
+        💼 Work Experience
+      </h2>
+      <div class="max-w-6xl mx-auto space-y-6">
+        <div
+          class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition transform hover:-translate-y-1"
+        >
+          <h3 class="text-xl font-semibold text-indigo-500">
+            Senior Software Engineer - Tiger Analytics
+          </h3>
+          <p class="text-sm text-gray-500">Jan 2024 - Present</p>
+          <p class="mt-2 text-gray-700">
+            Worked on building and maintaining data solutions on
+            <strong>Databricks</strong> and <strong>Azure Data Factory</strong>.
+            For an FMCG client’s executive dashboard covering
+            <strong>sales</strong>, <strong>profit &amp; loss</strong>, and
+            performance metrics, I
+            <strong>ingested data from multiple sources</strong> and implemented
+            a <strong>Medallion Architecture (Bronze/Silver/Gold)</strong> with
+            <strong>Delta Lake</strong>, executing
+            <strong>complex transformations</strong> and
+            <strong>automating pipelines</strong> end-to-end in Databricks.
+            <br />
+            <br />In a subsequent engagement, I led a
+            <strong>legacy pipeline migration</strong>:
+            <strong>stabilized</strong> jobs, delivered
+            <strong>performance optimizations</strong>, and rebuilt the workflow
+            in a new <strong>Databricks environment</strong> to improve
+            <strong>scalability</strong> and <strong>maintainability</strong>.
+            <br />
+            <br />Most recently, I contributed to a reusable
+            <strong>Data Ingestion Framework</strong> used across
+            projects—owning the <strong>backend ingestion components</strong> so
+            data engineers can focus on <strong>transformations</strong> without
+            worrying about orchestration or boilerplate ingestion logic.
+          </p>
+        </div>
+        <div
+          class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition transform hover:-translate-y-1"
+        >
+          <h3 class="text-xl font-semibold text-indigo-500">
+            Software Engineer - ElasticRun
+          </h3>
+          <p class="text-sm text-gray-500">Sept 2022 - Dec 2023</p>
+          <p class="mt-2 text-gray-700">
+            Contributed significantly to the
+            <strong>eCommerce Data Engineering Team</strong>, focusing on
+            building and optimizing
+            <strong>complex ETL payment pipelines</strong> to ensure accuracy
+            and reliability of vendor transactions. Designed and implemented
+            <strong>scalable data pipelines</strong> using the
+            <strong>Pentaho ETL tool</strong>, enabling seamless
+            <strong>data integration</strong> and
+            <strong>transformation</strong> for the vendor payment system.
+            <br />
+            <br />Achieved a
+            <strong>20% improvement in data processing efficiency</strong>,
+            enhancing overall system performance and reducing operational
+            bottlenecks.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certification -->
+    <section id="experience" class="max-w-6xl mx-auto py-16 px-6">
+      <h2
+        class="text-3xl font-bold text-center mb-10 text-indigo-600 tracking-wide"
+      >
+        💼 Certification
+      </h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div
+          class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition transform hover:-translate-y-1"
+        >
+          <h3 class="text-xl font-semibold text-indigo-500">
+            Databricks Data Engineer Associate
+          </h3>
+          <p class="text-sm text-gray-500">Jan 2025 - Jan 2027</p>
+          <p class="mt-2 text-gray-700">
+            Built and optimized data pipelines, implemented ETL processes, and
+            improved system performance by 30%.
+          </p>
+        </div>
+        <div
+          class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition transform hover:-translate-y-1"
+        >
+          <h3 class="text-xl font-semibold text-indigo-500">
+            Databricks Data Engineer Professional
+          </h3>
+          <p class="text-sm text-gray-500">Sept 2025 - Sept 2027</p>
+          <p class="mt-2 text-gray-700">
+            Worked on structured/unstructured data, developed dashboards, and
+            automated reporting workflows.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="max-w-6xl mx-auto px-6 py-16">
+      <h2
+        class="text-3xl font-bold text-center mb-10 text-indigo-600 tracking-wide"
+      >
+        📂 Projects
+      </h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div
+          class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition transform hover:-translate-y-1"
+        >
+          <h3 class="text-xl font-semibold text-indigo-500">
+            Real-Time Data Pipeline
+          </h3>
+          <p class="mt-2 text-gray-700">
+            Implemented a scalable data pipeline using Kafka and Spark for
+            processing streaming IoT data.
+          </p>
+        </div>
+        <div
+          class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition transform hover:-translate-y-1"
+        >
+          <h3 class="text-xl font-semibold text-indigo-500">Sales Dashboard</h3>
+          <p class="mt-2 text-gray-700">
+            Developed an interactive dashboard in Tableau for sales insights,
+            enabling business teams to make data-driven decisions.
+          </p>
+        </div>
+        <div
+          class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition transform hover:-translate-y-1"
+        >
+          <h3 class="text-xl font-semibold text-indigo-500">
+            Machine Learning Model Deployment
+          </h3>
+          <p class="mt-2 text-gray-700">
+            Deployed a machine learning model with Flask and Docker, enabling
+            real-time predictions via REST API.
+          </p>
+        </div>
+        <div
+          class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition transform hover:-translate-y-1"
+        >
+          <h3 class="text-xl font-semibold text-indigo-500">
+            ETL Automation Framework
+          </h3>
+          <p class="mt-2 text-gray-700">
+            Built an automated ETL framework in Python that reduced manual
+            intervention by 60% and improved reliability.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section
+      id="contact"
+      class="bg-gradient-to-r from-indigo-50 to-white py-20 px-6"
+    >
+      <h2
+        class="text-3xl font-bold text-center mb-10 text-indigo-600 tracking-wide"
+      >
+        📧 Get In Touch
+      </h2>
+      <div
+        class="max-w-2xl mx-auto bg-white p-10 rounded-2xl shadow-xl border border-gray-100"
+      >
+        <form class="space-y-5">
+          <input
+            type="text"
+            placeholder="Your Name"
+            class="w-full p-4 border rounded-lg focus:ring-2 focus:ring-indigo-400 focus:outline-none"
+            required
+          />
+          <input
+            type="email"
+            placeholder="Your Email"
+            class="w-full p-4 border rounded-lg focus:ring-2 focus:ring-indigo-400 focus:outline-none"
+            required
+          />
+          <textarea
+            placeholder="Your Message"
+            rows="5"
+            class="w-full p-4 border rounded-lg focus:ring-2 focus:ring-indigo-400 focus:outline-none"
+            required
+          ></textarea>
+          <button
+            type="submit"
+            class="w-full py-4 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-700 transition transform hover:scale-[1.02]"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-6 text-gray-600 bg-gray-50 border-t">
+      © 2025 Abhishek | All Rights Reserved
+    </footer>
+
+    <!-- Typewriter Script -->
+    <script>
+      const text = "Hi, I'm Abhishek Chitte";
+      let i = 0;
+      function typeWriter() {
+        if (i < text.length) {
+          document.getElementById("typewriter").innerHTML += text.charAt(i);
+          i++;
+          setTimeout(typeWriter, 100);
+        }
+      }
+      window.onload = typeWriter;
+    </script>
+  </body>
+</html>
